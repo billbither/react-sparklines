@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Sparklines, SparklinesBars, SparklinesLine, SparklinesCurve,  SparklinesNormalBand, SparklinesReferenceLine, SparklinesSpots } from '../src/Sparklines';
+import { Sparklines, SparklinesBars, SparklinesLine, SparklinesStep, SparklinesCurve,  SparklinesNormalBand, SparklinesReferenceLine, SparklinesSpots } from '../src/Sparklines';
 
 function boxMullerRandom () {
     let phase = false,
@@ -39,6 +39,11 @@ const Header = () =>
 const Simple = () =>
     <Sparklines data={sampleData}>
         <SparklinesLine />
+    </Sparklines>
+
+const Step = () =>
+    <Sparklines data={sampleData}>
+        <SparklinesStep />
     </Sparklines>
 
 const SimpleCurve = () =>
@@ -295,6 +300,7 @@ const RealWorld9 = () =>
 const demos = {
     'headersparklines': Header,
     'simple': Simple,
+    'step': Step,
     'simpleCurve': SimpleCurve,
     'customizable1': Customizable1,
     'customizable2': Customizable2,
