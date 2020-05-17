@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { PureComponent} from 'react';
 import SparklinesText from './SparklinesText';
 import SparklinesLine from './SparklinesLine';
+import SparklinesStep from './SparklinesStep';
 import SparklinesCurve from './SparklinesCurve';
 import SparklinesBars from './SparklinesBars';
 import SparklinesSpots from './SparklinesSpots';
@@ -62,4 +63,4 @@ class Sparklines extends PureComponent {
     }
 }
 
-export { Sparklines, SparklinesLine, SparklinesCurve, SparklinesBars, SparklinesSpots, SparklinesReferenceLine, SparklinesNormalBand, SparklinesText }
+export { Sparklines, SparklinesLine, SparklinesStep, SparklinesCurve, SparklinesBars, SparklinesSpots, SparklinesReferenceLine, SparklinesNormalBand, SparklinesText }
