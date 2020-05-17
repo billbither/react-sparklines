@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-export default class SparklinesLine extends React.Component {
+export default class SparklinesStep extends React.Component {
   static propTypes = {
     color: PropTypes.string,
     style: PropTypes.object,
